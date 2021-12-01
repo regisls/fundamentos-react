@@ -17,12 +17,16 @@ export default () => {
     return (
         <div className="TabelaProdutos">
             <table>
-                <tr>
-                    <td>ID</td>
-                    <td>Descrição</td>
-                    <td>Preço</td>
-                </tr>
-                {linhas}
+                <thead>
+                    <tr>
+                        <td>ID</td>
+                        <td>Descrição</td>
+                        <td>Preço</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    {linhas}
+                </tbody>
             </table>
         </div>
     )
